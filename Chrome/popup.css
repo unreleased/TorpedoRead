@@ -1,0 +1,127 @@
+body {
+  width: 300px;
+  padding: 20px;
+  background-color: #ff5722;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.beta {
+  font-weight: 700;
+  color: #ff5722;
+}
+
+h3 span {
+  font-weight: 500;
+}
+
+p,
+a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+  font-size: 14px;
+  color: deepskyblue;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom: 1px solid deepskyblue;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.shortcut {
+  margin-left: 5px;
+}
+
+.shortcut > span {
+  font-weight: 500;
+}
+
+#inject {
+  color: white;
+  background-color: #ff5722;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 3px;
+  opacity: 0.85;
+  transition: all 0.3s;
+  border: 0;
+}
+
+#inject:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.circle {
+  width: 530px;
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  top: 10px;
+  left: -130px;
+  box-shadow: inset 0px -2px 9px 6px #3f16084a;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact .settings {
+  color: #ff5722;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+
+.contact .settings:hover {
+  border-bottom: 1px solid #ff5722;
+}
+
+.blacklist-wrapper {
+  margin-top: 12px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+}
+
+.blacklist-wrapper:hover {
+  border-bottom: 1px solid #ff5722;
+}
+
+
+.blacklist-wrapper #blacklist {
+  font-weight: 500;
+  color: #ff5722;
+}
+
+.blacklist-wrapper span {
+  font-size: 14px;
+}

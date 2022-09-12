@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+      style-src   'self' https://fonts.googleapis.com;
+      font-src    'self' data: https://fonts.gstatic.com;
+      img-src     'self' data: content:;
+      media-src   *;
+            "
+    />
+
+    
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link rel="stylesheet" type="text/css" href="fonts.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h3>Torpedo<span>Read</span></h3>
+      <span class="beta">BETA</span>
+      <p id="content">Apply accelerated reading to any website at the click of a button! You can customize how you read by using our <a href="visualizer.html" target="_new">visualizer</a></p>
+      <button id="inject">Torpedify</button>
+      <span class="shortcut"
+        >Or <span>Ctrl</span> + <span>Shift</span> + <span>0</span></span
+      >
+
+      <div class="blacklist-wrapper">
+        <span>Disable TorpedoRead on: <span id="blacklist">www.thissite.com</span></span>
+      </div>
+
+      <div class="contact">
+        <a class="settings" href="options.html" target="_new">Settings</a>
+        <a href="https://twitter.com/TorpedoGG" target="_new"
+          >Contact us @TorpedoGG</a
+        >
+      </div>
+
+      <script src="./popup.js"></script>
+    </div>
+
+    <div class="circle"></div>
+  </body>
+</html>

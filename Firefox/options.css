@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0 0 50px 0;
+  font-family: "Open Sans", "Arial";
+}
+
+header {
+  background-color: #ff5722;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px -15px 19px 20px #0000004a;
+}
+
+.brand {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand img {
+  width: 34px;
+  height: 34px;
+}
+
+.brand h1 {
+  margin: 0 0 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.5;
+}
+
+.brand h1 span {
+  font-weight: 300;
+}
+
+header .button {
+  background-color: white;
+  box-shadow: 0px 0px 20px 4px #6a240e40;
+  color: #ff5722;
+  border: 0;
+  font-weight: 500;
+  padding: 8px 25px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  transition: opacity .3s;
+  text-decoration: none;
+}
+
+button#save, button#saveVisuals {
+  border: 0;
+  background-color: #ff5722;
+  box-shadow: 0px 0px 20px 4px #6a240e40;
+  color: white;
+  font-weight: 600;
+  padding: 8px 25px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  transition: opacity .3s;
+  text-decoration: none;
+}
+
+button {
+  margin-top: 30px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+
+main {
+  margin: 30px;
+}
+
+main h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #343434;
+  margin-bottom: 0;
+}
+
+main p {
+  font-size: 14px;
+  color: #505050;
+}
+
+main h3 {
+  font-size: 22px;
+  color: #343434;
+  margin: 0 0 15px 0;
+}
+
+
+main > div {
+  margin-top: 35px;
+}
+
+#options label {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px 5px 5px;
+}
+
+#options label > span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#options label .experimental {
+  color: #ff5722;
+  font-weight: 600;
+}
+
+#options label input {
+  accent-color: #ff5721;
+}
+
+#options label input:disabled {
+  cursor: not-allowed;
+}
+
+#options label input:disabled ~ span {
+  color: #bebebe;
+  cursor: not-allowed;
+}
+
+
+.quote {
+  max-width: 600px;
+  width: 100%;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 4px solid #ff5722;
+}
+
+.quote p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+.quote span {
+  font-weight: bold;
+}
+
+
+.quote a {
+  color: deepskyblue;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+
+.quote a:hover {
+  border-bottom: 1px solid deepskyblue;
+}
+
+
+
+
+
+
+
+/**
+* CSS for Visualizer
+*/
+
+.visualizer .textVisualizer {
+  padding: 25px;
+  max-width: 400px;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.visualizer .v1 {
+  background-color: #121212;
+  border: 1px solid #121212;
+  color: white;
+}
+
+.visualizer .v2 {
+  border: 1px solid #121212;
+}
+
+.visualizer .v3 {
+  background-color: #22303C;
+  border: 1px solid #22303C;
+  color: #8899A6;
+}
+
+.wrapper {
+  max-width: 700px;
+  display: flex;
+}
+
+.visualizer .settings {
+  margin-left: 40px;
+}
+
+.visualizer input, .visualizer select {
+  accent-color: #ff5721;
+  display: block;
+}
+
+.visualizer label {
+  display: block;
+}
+
+.visualizer label:not(:first-child) {
+  margin-top: 20px;
+}
+
+.visualizer label input, .visualizer label select {
+  padding: 6px 15px;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+.visualizer label span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 3px;
+}
+
+
+/**
+* Torpedo styles
+*/
+
+.torpedo__regular {
+  font-family: 'Open Sans';
+  font-weight: inherit;
+  font-style: normal;
+  font-weight: 300;
+  filter: brightness(0.9);
+}
+
+.torpedo__bold {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-style: normal;
+  filter: brightness(1.1);
+}

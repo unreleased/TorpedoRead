@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TorpedoRead | Options</title>
+    <link rel="stylesheet" type="text/css" href="options.css" />
+    <link rel="stylesheet" type="text/css" href="fonts.css" />
+  </head>
+  <body>
+    <div id="options">
+      <header>
+        <a href="/options.html" class="brand">
+          <img src="logo.png" />
+          <h1><span>Torpedo</span>Read</h1>
+        </a>
+        <a href="/visualizer.html" class="button">Visualizer</a>
+      </header>
+      <main>
+        <h2>Options</h2>
+        <p>Customize your TorpedoRead experience!</p>
+        <div class="quote">
+          <p><span>Please note:</span> TorpedoRead is a brand new Chrome Extension empowering websites with accelerated reading. Because TorpedoRead is still so new, there will be many bugs. If you could report any bugs to <a href="https://twitter.com/TorpedoGG" target="_new">@TorpedoGG</a> that would be greatly appreciated. More customization options will be available shortly. Some have not fully been implemented yet.</p>
+        </div>
+        <div>
+          <h3>Customization</h3>
+          <label>
+            <input type="checkbox" id="autoapply" />
+            <span><span class="experimental">EXPERIMENTAL</span> Automatically apply accelerated reading to websites on load.</span>
+          </label>
+          <label>
+            <input type="checkbox" id="runObserver" />
+            <span><span class="experimental">EXPERIMENTAL</span> Automatically apply accelerated reading to newly loaded content such as chat messages.</span>
+          </label>
+          <label>
+            <input type="checkbox" id="updateapply" disabled />
+            <span>More options coming soon.</span>
+          </label>
+        </div>
+        <button id="save">Save</button>
+      </main>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

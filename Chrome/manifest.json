@@ -1,0 +1,79 @@
+{
+  "name": "TorpedoRead",
+  "description": "Enhanced text readability through font-weights and brightness adjustment.",
+  "version": "0.0.2",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "host_permissions": ["http://*/", "https://*/", "file://*"],
+  "action": {
+    "default_title": "Ok",
+    "default_popup": "./popup.html"
+  },
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "web_accessible_resources": [{
+    "resources": [
+      "/fonts/Open_Sans/OpenSans-Light.ttf",
+      "/fonts/Open_Sans/OpenSans-Regular.ttf",
+      "/fonts/Open_Sans/OpenSans-Medium.ttf",
+      "/fonts/Open_Sans/OpenSans-SemiBold.ttf",
+      "/fonts/Open_Sans/OpenSans-Bold.ttf",
+      "/fonts/Open_Sans/OpenSans-ExtraBold.ttf",
+      "/fonts/Open_Sans/OpenSans-LightItalic.ttf",
+      "/fonts/Open_Sans/OpenSans-Italic.ttf",
+      "/fonts/Open_Sans/OpenSans-MediumItalic.ttf",
+      "/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf",
+      "/fonts/Open_Sans/OpenSans-BoldItalic.ttf",
+      "/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-LightItalic.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-MediumItalic.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-BoldItalic.ttf",
+      "/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBoldItalic.ttf",
+      "/fonts/Poppins/Poppins-Light.ttf",
+      "/fonts/Poppins/Poppins-Regular.ttf",
+      "/fonts/Poppins/Poppins-Medium.ttf",
+      "/fonts/Poppins/Poppins-SemiBold.ttf",
+      "/fonts/Poppins/Poppins-Bold.ttf",
+      "/fonts/Poppins/Poppins-ExtraBold.ttf",
+      "/fonts/Poppins/Poppins-LightItalic.ttf",
+      "/fonts/Poppins/Poppins-Italic.ttf",
+      "/fonts/Poppins/Poppins-MediumItalic.ttf",
+      "/fonts/Poppins/Poppins-SemiBoldItalic.ttf",
+      "/fonts/Poppins/Poppins-BoldItalic.ttf",
+      "/fonts/Poppins/Poppins-ExtraBoldItalic.ttf",
+      "/fonts.css"
+    ],
+    "matches": ["<all_urls>"]
+  }],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-inject.js"]
+    }
+  ],
+  "commands": {
+    "torpedify": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+0",
+        "mac": "Command+Shift+0"
+      },
+      "description": "Torpedify the page"
+    }
+  }
+}
